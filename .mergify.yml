@@ -1,0 +1,8 @@
+commands_restrictions:
+  rebase:
+    conditions:
+      - or:
+          - sender-permission >= write
+          - sender = {{author}}
+merge_protections_settings:
+  reporting_method: check-runs
